@@ -237,7 +237,7 @@ We ran permutation test for 10000 times and the graph shows the distribution of 
 
 ### Hypothesis Testing Conclusion
 
-The P-value for the testing is 0.0013, which means that at significant level of 0.05, we are able to reject the null hypothesis.
+The P-value for the testing is 0.009, which means that at significant level of 0.05, we are able to reject the null hypothesis.
 
 This result could be reasonable since first, hight level complexity of a recipes could mean difficulties in cooking the dish and increasing probability in failing. If people fail to cook the dish, they might give low rating to the recipe. Also, people might have higher expectation on the dish if it is complex and hard to make. Then, people might have a more strict rating scale for complex recipes. 
 
