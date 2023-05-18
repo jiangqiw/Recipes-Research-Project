@@ -190,10 +190,21 @@ We use permutation test to shuffle the missingness of rating 1000 times and get 
 
 <iframe src="assets/fig12.html" width=800 height=600 frameBorder=0></iframe>
 
-Finally, we calculate the p-value 0.127. when we use 0.05 as a significance threshold, since 0.127 >= 0.05, we fail to reject the null hypothesis that the rating is not dependent on the minutes.
+Finally, we calculate the p-value 0.127. when we use 0.05 as a significance threshold, since 0.127 > 0.05, we fail to reject the null hypothesis that the rating is not dependent on the minutes.
 
-## calories and Rating
+## Calories and Rating
 
+Null hypothesis: the distribution of the calories when rating is missing is the same as the distribution of the calories when rating is not missing
+Alternative hypothesis: the distribution of the calories when rating is missing is different from the distribution of the calories when rating is not missing
+Observed Statistics: the absolute difference between calories mean of these two distributions. We also draw distribution plots about these two distributions.
+
+<iframe src="assets/fig13.html" width=800 height=600 frameBorder=0></iframe>
+
+We use permutation test to shuffle the missingness of rating 1000 times and get 1000 simulating results about the absolute difference. 
+
+<iframe src="assets/fig14.html" width=800 height=600 frameBorder=0></iframe>
+
+Finally, we calculate the p-value approximately 0.0. when we use 0.05 as a significance threshold, since 0.0 <= 0.05, we reject the null hypothesis that the rating is not dependent on the calories.
 
 ## Hypothesis Testing
 
