@@ -25,7 +25,7 @@ This research question could be important for recipe-designers and food.com webs
 Before conducting analysis related to the datasets, we would first conduct data cleaning to make the data more convenient for analysis.
 
 > Checking Data Types
-> 
+ 
 First, I check the data type for each column and think about the necessary data cleaning steps.
 
 ```
@@ -46,10 +46,26 @@ dtype: object
 > Converting Object to List
 The first step we are going to do to the dataframe is the tags, steps and ingredients columns. The three column all look like lists of string, but by checking the specific entry in the dataframe, we find that they are actually not lists. This could due to when web scraping, data collecter does not convert the text into list. As a result, we take action to convert the these three columns into list of string.
 
-head of df needed
-
 > Converting `nutrition` Column to List and Assign Individual Columns
 
-We also find that the `nutrition` column in the dataframe look like a list containing float but actually not. We find that in the list, the float represent: `'calories', 'total fat (PDV)', 'sugar (PDV)', 'sodium (PDV)', 'protein (PDV)', 'saturated fat (PDV)', 'carbohydrates (PDV)'`. As a result, we first convert the column into list of float and create individual column for each nutrition 
+We also find that the `nutrition` column in the dataframe look like a list containing float but actually not. We find that in the list, the float represent: `'calories', 'total fat (PDV)', 'sugar (PDV)', 'sodium (PDV)', 'protein (PDV)', 'saturated fat (PDV)', 'carbohydrates (PDV)'`. As a result, we first convert the column into list of float and create individual column for each nutrition. In each column, we also convert the data to float data type that is convenient for later calculation.
 
-head of df needed
+> Changing submitted column into datetime
+
+The `submitted` column in the dataframe is presented as a object. We change it into datetime data type so we could apply basic operations later.
+
+> Merging Two Dataframes
+ 
+Then, since there are two dataframe but with common column, which are `id` and `recipe_id`. As a result, we merge the two dataframe together to show the recipes and corresponding rating and reviews.
+
+merged dataframe head needed
+
+> Adding Average Rating Column
+
+After merging the two dataframes, we find one important data is the rating for the recipes. As a result, we add new column name `ave_rating`, which include the average rating for the column. Also, we beleve that the 0 in the rating might be empty rating that people do not fill in. As a result, we replace 0 with nan value
+
+> Cleaning Result
+
+The cleaned dataframe is shown below.
+
+df head needed.
