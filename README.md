@@ -153,6 +153,13 @@ In the aggregates analysis, we will study the total fat with the cooking minutes
 |                 3 |                      12.5794  |                               2 |                            0 |                          411 |
 |                 4 |                      20.4719  |                               7 |                            0 |                          258 |
 
+|   ('minutes', '') |   ('mean', 'total fat (PDV)') |   ('median', 'total fat (PDV)') |   ('min', 'total fat (PDV)') |   ('max', 'total fat (PDV)') |
+|------------------:|------------------------------:|--------------------------------:|-----------------------------:|-----------------------------:|
+|                 0 |                      46       |                              46 |                           46 |                           46 |
+|                 1 |                       7.78603 |                               0 |                            0 |                          159 |
+|                 2 |                       9.69053 |                               0 |                            0 |                          419 |
+|                 3 |                      12.5794  |                               2 |                            0 |                          411 |
+|                 4 |                      20.4719  |                               7 |                            0 |                          258 |
 This is the pivot table for the `total fat` and `minutes`
 
 
