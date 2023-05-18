@@ -190,7 +190,7 @@ We use permutation test to shuffle the missingness of rating 1000 times and get 
 
 <iframe src="assets/fig12.html" width=800 height=600 frameBorder=0></iframe>
 
-Finally, we calculate the p-value 0.127. when we use 0.05 as a significance threshold, since 0.127 > 0.05, we fail to reject the null hypothesis that the rating is not dependent on the minutes.
+Finally, we calculate the p-value 0.127. when we use 0.05 as a significance threshold, since 0.127 > 0.05, we fail to reject the null hypothesis that the rating is not dependent on the minutes. Based on our test result, we can see that the missingness of the rating is MCAR because the missingness of rating is not correlated with the minutes.
 
 > Calories and Rating
 
@@ -204,7 +204,7 @@ We use permutation test to shuffle the missingness of rating 1000 times and get 
 
 <iframe src="assets/fig14.html" width=800 height=600 frameBorder=0></iframe>
 
-Finally, we calculate the p-value approximately 0.0. when we use 0.05 as a significance threshold, since 0.0 <= 0.05, we reject the null hypothesis that the rating is not dependent on the calories.
+Finally, we calculate the p-value approximately 0.0. when we use 0.05 as a significance threshold, since 0.0 <= 0.05, we reject the null hypothesis that the rating is not dependent on the calories. Based on the result, we can see that the missingness of rating is the MAR because the rating is dependent on the calories. Probably if some recipes with relatively high or low calories will be more likely to have the missingness in the rating.
 
 ## Hypothesis Testing
 
