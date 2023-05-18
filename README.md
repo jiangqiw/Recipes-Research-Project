@@ -79,3 +79,21 @@ In the univariate analysis, we would analyze the distribution of number of ingre
 
 <iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
 
+This shows that the distribution could be approximate as a gaussian distribution but skewed right. We would say that the graph centered around 8, meaning that most recipes have 8 ingredients.
+
+<iframe src="assets/fig2.html" width=800 height=600 frameBorder=0></iframe>
+
+The distrubution also show similar trend in the number of steps, which is a right skewed gaussian distribution. By comparing at the two graph, the graph for the number of distribution is more centered. The center for the graph is around 7, meaning most recipes have 7 steps. Also, we could see the graph have a lot outliers that have very big step numbers. After observing the dataset and also consider together with the `minutes` column and real life situation, we decided to choose steps greater than 40 and minutes greater than 200 as outlier and not faithful data.
+
+### Bivariate Analysis
+
+Then, we do bivariate analysis between the number of steps and the number of ingredients
+
+<iframe src="assets/fig3.html" width=800 height=600 frameBorder=0></iframe>
+
+When the individual distritbution for number of steps and number of ingredients seems very similar, the scatter plot does not show very strong correlation between the number of steps and number of ingredient. We could say that there is weak positive relationship between the number of steps and the number of ingredients.
+
+<iframe src="assets/fig4.html" width=800 height=600 frameBorder=0></iframe>
+
+We could see that the average rating and the number of ingredients in the recipes do not have much relationship with each other. Especially with number of ingredients smaller than 15, it is almost a horizontal line, showing no relationship between the two variables. The large fluctuate with number of ingredients larger than 15 could be due to relatively small data size collected within that range.
+
