@@ -67,9 +67,49 @@ After merging the two dataframes, we find one important data is the rating for t
 
 > Cleaning Result
 
-The cleaned dataframe is shown below.
+The cleaned dataframe's datatype for each column is listed below.
 
-df head needed.
+```
+id                              int64
+name                           object
+minutes                         int64
+contributor_id                  int64
+submitted              datetime64[ns]
+tags                           object
+nutrition                      object
+n_steps                         int64
+steps                          object
+description                    object
+ingredients                    object
+n_ingredients                   int64
+ave_rating                    float64
+calories                      float64
+total fat (PDV)               float64
+sugar (PDV)                   float64
+sodium (PDV)                  float64
+protein (PDV)                 float64
+saturated fat (PDV)           float64
+carbohydrates (PDV)           float64
+dtype: object
+```
+
+The cleaned dataframe is shown below (with only important columns selected for display).
+
+|     id | name                                 |   minutes | submitted           |   n_steps |   n_ingredients |   ave_rating |
+|-------:|:-------------------------------------|----------:|:--------------------|----------:|----------------:|-------------:|
+| 333281 | 1 brownies in the world    best ever |        40 | 2008-10-27 00:00:00 |        10 |               9 |            4 |
+| 453467 | 1 in canada chocolate chip cookies   |        45 | 2011-04-11 00:00:00 |        12 |              11 |            5 |
+| 306168 | 412 broccoli casserole               |        40 | 2008-05-30 00:00:00 |         6 |               9 |            5 |
+| 286009 | millionaire pound cake               |       120 | 2008-02-12 00:00:00 |         7 |               7 |            5 |
+| 475785 | 2000 meatloaf                        |        90 | 2012-03-06 00:00:00 |        17 |              13 |            5 |
+
+The merged dataframe is shown below (with only important columns selected for display).
+|     id | name                                 |   minutes | submitted   |   user_id | date       |   rating | review                                                                                                                                                                                                                                                                                                                                           |
+|-------:|:-------------------------------------|----------:|:------------|----------:|:-----------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 333281 | 1 brownies in the world    best ever |        40 | 2008-10-27  |    386585 | 2008-11-19 |        4 | These were pretty good, but took forever to bake.  I would send it ended up being almost an hour!  Even then, the brownies stuck to the foil, and were on the overly moist side and not easy to cut.  They did taste quite rich, though!  Made for My 3 Chefs.                                                                                   |
+| 453467 | 1 in canada chocolate chip cookies   |        45 | 2011-04-11  |    424680 | 2012-01-26 |        5 | Originally I was gonna cut the recipe in half (just the 2 of us here), but then we had a park-wide yard sale, & I made the whole batch & used them as enticements for potential buyers ~ what the hey, a free cookie as delicious as these are, definitely works its magic! Will be making these again, for sure! Thanks for posting the recipe! |
+| 306168 | 412 broccoli casserole               |        40 | 2008-05-30  |     29782 | 2008-12-31 |        5 | This was one of the best broccoli casseroles that I have ever made.  I made my own chicken soup for this recipe. I was a bit worried about the tsp of soy sauce but it gave the casserole the best flavor. YUM!                                                                                                                                  |
+
 
 ## Exploratory Data Analysis
 
