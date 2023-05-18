@@ -44,6 +44,7 @@ n_ingredients      int64
 dtype: object
 ```
 > Converting Object to List
+
 The first step we are going to do to the dataframe is the tags, steps and ingredients columns. The three column all look like lists of string, but by checking the specific entry in the dataframe, we find that they are actually not lists. This could due to when web scraping, data collecter does not convert the text into list. As a result, we take action to convert the these three columns into list of string.
 
 > Converting `nutrition` Column to List and Assign Individual Columns
