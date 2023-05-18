@@ -218,6 +218,16 @@ Null Hypothesis H0: People are rating all the recipes in the same scale.
 
 Alternative Hypothesis H1: People are giving complex recipe lower rating
 
+We would select only the useful column, including n_steps and average rating, and also create new column named `complex`, which is true if it has steps more than 10 and false if has steps less or equal to 10.
+
+|     id |   n_steps |   ave_rating | complex   |
+|-------:|----------:|-------------:|:----------|
+| 333281 |        10 |            4 | False     |
+| 453467 |        12 |            5 | True      |
+| 306168 |         6 |            5 | False     |
+| 286009 |         7 |            5 | False     |
+| 475785 |        17 |            5 | True      |
+
 The reason for choosing one-sided test is that we might assume people could feel frustrated when cooking complex recipes, and also recipes with more steps are harder to cook
 
 | complex   |   n_steps |   ave_rating |
@@ -237,7 +247,7 @@ We ran permutation test for 10000 times and the graph shows the distribution of 
 
 ### Hypothesis Testing Conclusion
 
-The P-value for the testing is 0.0013, which means that at significant level of 0.05, we are able to reject the null hypothesis.
+The P-value for the testing is 0.009, which means that at significant level of 0.05, we are able to reject the null hypothesis.
 
 This result could be reasonable since first, hight level complexity of a recipes could mean difficulties in cooking the dish and increasing probability in failing. If people fail to cook the dish, they might give low rating to the recipe. Also, people might have higher expectation on the dish if it is complex and hard to make. Then, people might have a more strict rating scale for complex recipes. 
 
