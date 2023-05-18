@@ -70,3 +70,12 @@ After merging the two dataframes, we find one important data is the rating for t
 The cleaned dataframe is shown below.
 
 df head needed.
+
+## Exploratory Data Analysis
+
+### Univariate Analysis
+
+In the univariate analysis, we would analyze the distribution of number of ingredients and the distribution of number of steps
+
+<iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
+
