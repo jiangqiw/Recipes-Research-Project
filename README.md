@@ -178,7 +178,7 @@ In the NMAR, we focus on the missingness of the review in the merged dataframe. 
 Now, we focus on the missingness of rating in the merged dataframe and test the dependency of this missingness. 
 We are preparing to test the dependency of the missingness on the minutes, the time to finish the recipe, and the calories, the energy of the recipe.
 
-## Minutes and Rating
+> Minutes and Rating
 
 Null hypothesis: the distribution of the minutes when rating is missing is the same as the distribution of the minutes when rating is not missing
 Alternative hypothesis: the distribution of the minutes when rating is missing is different from the distribution of the minutes when rating is not missing
@@ -192,7 +192,7 @@ We use permutation test to shuffle the missingness of rating 1000 times and get 
 
 Finally, we calculate the p-value 0.127. when we use 0.05 as a significance threshold, since 0.127 > 0.05, we fail to reject the null hypothesis that the rating is not dependent on the minutes.
 
-## Calories and Rating
+> Calories and Rating
 
 Null hypothesis: the distribution of the calories when rating is missing is the same as the distribution of the calories when rating is not missing
 Alternative hypothesis: the distribution of the calories when rating is missing is different from the distribution of the calories when rating is not missing
