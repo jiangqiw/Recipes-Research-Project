@@ -104,6 +104,7 @@ The cleaned dataframe is shown below (with only important columns selected for d
 | 475785 | 2000 meatloaf                        |        90 | 2012-03-06 00:00:00 |        17 |              13 |            5 |
 
 The merged dataframe is shown below (with only important columns selected for display).
+
 |     id | name                                 |   minutes | submitted   |   user_id | date       |   rating | review                                                                                                                                                                                                                                                                                                                                           |
 |-------:|:-------------------------------------|----------:|:------------|----------:|:-----------|---------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 333281 | 1 brownies in the world    best ever |        40 | 2008-10-27  |    386585 | 2008-11-19 |        4 | These were pretty good, but took forever to bake.  I would send it ended up being almost an hour!  Even then, the brownies stuck to the foil, and were on the overly moist side and not easy to cut.  They did taste quite rich, though!  Made for My 3 Chefs.                                                                                   |
@@ -145,13 +146,6 @@ We could see that the average rating and the number of ingredients in the recipe
 
 In the aggregates analysis, we will study the total fat with the cooking minutes
 
-|   minutes |   mean total fat (PDV) |   median total fat (PDV) |   min total fat (PDV) |   max total fat (PDV) |
-|------------------:|------------------------------:|--------------------------------:|-----------------------------:|-----------------------------:|
-|                 0 |                      46       |                              46 |                           46 |                           46 |
-|                 1 |                       7.78603 |                               0 |                            0 |                          159 |
-|                 2 |                       9.69053 |                               0 |                            0 |                          419 |
-|                 3 |                      12.5794  |                               2 |                            0 |                          411 |
-|                 4 |                      20.4719  |                               7 |                            0 |                          258 |
 
 |   ('minutes', '') |   ('mean', 'total fat (PDV)') |   ('median', 'total fat (PDV)') |   ('min', 'total fat (PDV)') |   ('max', 'total fat (PDV)') |
 |------------------:|------------------------------:|--------------------------------:|-----------------------------:|-----------------------------:|
@@ -160,6 +154,7 @@ In the aggregates analysis, we will study the total fat with the cooking minutes
 |                 2 |                       9.69053 |                               0 |                            0 |                          419 |
 |                 3 |                      12.5794  |                               2 |                            0 |                          411 |
 |                 4 |                      20.4719  |                               7 |                            0 |                          258 |
+
 This is the pivot table for the `total fat` and `minutes`
 
 
