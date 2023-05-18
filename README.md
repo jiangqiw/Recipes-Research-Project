@@ -1,4 +1,4 @@
-# Recipes-Research-Project
+# Recipes and Rating Research Project
 
 This is the Project 3 under course DSC80
 
