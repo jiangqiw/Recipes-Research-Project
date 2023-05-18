@@ -105,13 +105,13 @@ We could see that the average rating and the number of ingredients in the recipe
 
 In the aggregates analysis, we will study the total fat with the cooking minutes
 
-|    |   ('minutes', '') |   ('mean', 'total fat (PDV)') |   ('median', 'total fat (PDV)') |   ('min', 'total fat (PDV)') |   ('max', 'total fat (PDV)') |
-|---:|------------------:|------------------------------:|--------------------------------:|-----------------------------:|-----------------------------:|
-|  0 |                 0 |                      46       |                              46 |                           46 |                           46 |
-|  1 |                 1 |                       7.78603 |                               0 |                            0 |                          159 |
-|  2 |                 2 |                       9.69053 |                               0 |                            0 |                          419 |
-|  3 |                 3 |                      12.5794  |                               2 |                            0 |                          411 |
-|  4 |                 4 |                      20.4719  |                               7 |                            0 |                          258 |
+|   minutes |   mean total fat (PDV) |   median total fat (PDV) |   min total fat (PDV) |   max total fat (PDV) |
+|------------------:|------------------------------:|--------------------------------:|-----------------------------:|-----------------------------:|
+|                 0 |                      46       |                              46 |                           46 |                           46 |
+|                 1 |                       7.78603 |                               0 |                            0 |                          159 |
+|                 2 |                       9.69053 |                               0 |                            0 |                          419 |
+|                 3 |                      12.5794  |                               2 |                            0 |                          411 |
+|                 4 |                      20.4719  |                               7 |                            0 |                          258 |
 
 This is the pivot table for the `total fat` and `minutes`
 
@@ -122,3 +122,34 @@ This is the pivot table for the `total fat` and `minutes`
 <iframe src="assets/fig7.html" width=800 height=600 frameBorder=0></iframe>
 
 One interesting result that we find in the aggregates data is that there is a peek for total fat in the recipe around 60 minutes of cooking time. Otherwise the recipes' total fat is fluctuate around 50 PDV, which is around 1000 calories. This shows that most recipes collected are recipes for health food.
+
+## Assessment of Missingness
+
+In this part, we will be conducting assessment of missingness on the merged dataframe.
+
+### NMAR Analysis
+
+### Missingness Dependency
+
+## Hypothesis Testing
+
+The question we are going to research on is that: are regular recipes and complex recipes are rated in the same scale?
+
+In this part, we will define a complex recipes as recipes have greater than 10 steps. We will conduct a permutation test.
+
+### Setting Up the Testing
+
+Null Hypothesis H0: People are rating all the recipes in the same scale.
+
+Alternative Hypothesis H1: People are giving complex recipe lower rating
+
+The reason for choosing one-sided test is that we might assume people could feel frustrated when cooking complex recipes, and also recipes with more steps are harder to cook
+
+| complex   |   n_steps |   ave_rating |
+|:----------|----------:|-------------:|
+| False     |   6.35718 |      4.50184 |
+| True      |  16.1414  |      4.48441 |
+
+Since ave_rating is numerical data, so it is proper to use the difference in mean as test statistics.
+
+The observed difference in mean is `0.017428379224658563`
