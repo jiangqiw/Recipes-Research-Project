@@ -150,6 +150,11 @@ The reason for choosing one-sided test is that we might assume people could feel
 | False     |   6.35718 |      4.50184 |
 | True      |  16.1414  |      4.48441 |
 
-Since ave_rating is numerical data, so it is proper to use the difference in mean as test statistics.
+Since ave_rating is numerical data, so it is proper to use the difference in mean as test statistics. In the part of research, the significant level we choose is `0.05`
 
 The observed difference in mean is `0.017428379224658563`
+
+### Permutation Test
+
+<iframe src="assets/fig10.html" width=800 height=600 frameBorder=0></iframe>
+
