@@ -218,6 +218,16 @@ Null Hypothesis H0: People are rating all the recipes in the same scale.
 
 Alternative Hypothesis H1: People are giving complex recipe lower rating
 
+We would select only the useful column, including n_steps and average rating, and also create new column named `complex`, which is true if it has steps more than 10 and false if has steps less or equal to 10.
+
+|     id |   n_steps |   ave_rating | complex   |
+|-------:|----------:|-------------:|:----------|
+| 333281 |        10 |            4 | False     |
+| 453467 |        12 |            5 | True      |
+| 306168 |         6 |            5 | False     |
+| 286009 |         7 |            5 | False     |
+| 475785 |        17 |            5 | True      |
+
 The reason for choosing one-sided test is that we might assume people could feel frustrated when cooking complex recipes, and also recipes with more steps are harder to cook
 
 | complex   |   n_steps |   ave_rating |
