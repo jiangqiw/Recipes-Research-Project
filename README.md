@@ -171,7 +171,10 @@ In this part, we will be conducting assessment of missingness on the merged data
 
 ### NMAR Analysis
 
+In the NMAR, we focus on the missingness of the review in the merged dataframe. The missingness of the review is probably because someone think that the recipe is easy and there is nothing worth talking about. Thus, they just skip the review. If we want additional data to prove it (making it MAR), we could add a personal difficulty evaluation for every person who use this recipe.
+
 ### Missingness Dependency
+
 
 ## Hypothesis Testing
 
