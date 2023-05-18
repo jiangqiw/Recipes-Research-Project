@@ -89,11 +89,36 @@ The distrubution also show similar trend in the number of steps, which is a righ
 
 Then, we do bivariate analysis between the number of steps and the number of ingredients
 
+
 <iframe src="assets/fig3.html" width=800 height=600 frameBorder=0></iframe>
+
 
 When the individual distritbution for number of steps and number of ingredients seems very similar, the scatter plot does not show very strong correlation between the number of steps and number of ingredient. We could say that there is weak positive relationship between the number of steps and the number of ingredients.
 
+
 <iframe src="assets/fig4.html" width=800 height=600 frameBorder=0></iframe>
+
 
 We could see that the average rating and the number of ingredients in the recipes do not have much relationship with each other. Especially with number of ingredients smaller than 15, it is almost a horizontal line, showing no relationship between the two variables. The large fluctuate with number of ingredients larger than 15 could be due to relatively small data size collected within that range.
 
+### Interesting Aggregates
+
+In the aggregates analysis, we will study the total fat with the cooking minutes
+
+|    |   ('minutes', '') |   ('mean', 'total fat (PDV)') |   ('median', 'total fat (PDV)') |   ('min', 'total fat (PDV)') |   ('max', 'total fat (PDV)') |
+|---:|------------------:|------------------------------:|--------------------------------:|-----------------------------:|-----------------------------:|
+|  0 |                 0 |                      46       |                              46 |                           46 |                           46 |
+|  1 |                 1 |                       7.78603 |                               0 |                            0 |                          159 |
+|  2 |                 2 |                       9.69053 |                               0 |                            0 |                          419 |
+|  3 |                 3 |                      12.5794  |                               2 |                            0 |                          411 |
+|  4 |                 4 |                      20.4719  |                               7 |                            0 |                          258 |
+
+This is the pivot table for the `total fat` and `minutes`
+
+
+<iframe src="assets/fig6.html" width=800 height=600 frameBorder=0></iframe>
+
+
+<iframe src="assets/fig7.html" width=800 height=600 frameBorder=0></iframe>
+
+One interesting result that we find in the aggregates data is that there is a peek for total fat in the recipe around 60 minutes of cooking time. Otherwise the recipes' total fat is fluctuate around 50 PDV, which is around 1000 calories. This shows that most recipes collected are recipes for health food.
