@@ -20,7 +20,7 @@ Moreover, we would focus on the research question that, are complex recipes and 
 
 This research question could be important for recipe-designers and food.com website holder. By answering this research question, we could possibly provide the viewpoints to the rating scale for people who use this website. With our result stating whether people would prefer complex recipes or not, recipe-designers could design more complex/simple recipes to meet the need to people using the website.
 
-## Data Cleaning
+## Data Cleaning and EDA
 
 Before conducting analysis related to the datasets, we would first conduct data cleaning to make the data more convenient for analysis.
 
@@ -112,7 +112,7 @@ The merged dataframe is shown below (with only important columns selected for di
 | 306168 | 412 broccoli casserole               |        40 | 2008-05-30  |     29782 | 2008-12-31 |        5 | This was one of the best broccoli casseroles that I have ever made.  I made my own chicken soup for this recipe. I was a bit worried about the tsp of soy sauce but it gave the casserole the best flavor. YUM!                                                                                                                                  |
 
 
-## Exploratory Data Analysis
+### Exploratory Data Analysis
 
 ### Univariate Analysis
 
